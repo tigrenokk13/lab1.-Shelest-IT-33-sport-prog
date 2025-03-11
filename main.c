@@ -35,28 +35,23 @@ int main(){
     //Створи програму, що додає 3.5 і 2.7 і виводить результат.
     float first_number = 3.5;
     float second_number = 2.7;
-    printf("Sum = %.3f \n", first_number+second_number);
+    printf("Sum = %.1f \n", first_number+second_number);
 
 
     //Завдання 8
     //Створи програму, що конвертує температуру з Цельсія в Фаренгейт(формула : F = C * 9 / 5 + 32)
-    int t;
+    double t;
     printf("Enter the temperature in Celsius: ");
-    scanf("%d", &t);
-    int F = t * 9 / 5 + 32;
-    printf("F = %d \n",F);
+    scanf("%f", &t);
+    double F = t * 9 / 5 + 32;
+    printf("F = %.1f \n",F);
 
     //Завдання 9
     //Напиши програму, яка перевіряє, чи є число парним, і виводить "Парне" або "Непарне"
     int new_number;
     printf("Enter number: ");
     scanf("%d", &new_number);
-    if(new_number % 2 == 0){
-        printf("Your number is even\n");
-    }
-    else{
-        printf("Your number is odd\n");
-    }
+    printf("Your number is %s\n", (new_number % 2) ? "odd" : "even");
 
 
     //Завдання 10
